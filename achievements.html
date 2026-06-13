@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Achievements – LexCounsel Advocates</title>
+  <meta name="description" content="Explore LexCounsel's landmark case victories, awards, recognitions and milestones. 20+ years of excellence in Indian law."/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>"/>
+  <style>
+    .milestones{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;margin-top:3rem}
+    .milestone-card{text-align:center;padding:2.5rem 1.8rem;border-radius:var(--radius-lg);background:#fff;border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden}
+    .milestone-card::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--blue),var(--gold))}
+    .milestone-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+    .milestone-icon{font-size:3rem;margin-bottom:1rem}
+    .milestone-num{font-size:3.2rem;font-family:'Playfair Display',serif;font-weight:800;color:var(--navy);margin-bottom:.3rem}
+    .milestone-label{font-size:.85rem;color:var(--gray-600);text-transform:uppercase;letter-spacing:.08em}
+
+    .awards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem}
+    .award-card{display:flex;gap:1.2rem;background:#fff;border-radius:var(--radius);padding:1.8rem;border:1px solid #e2e8f0;transition:var(--transition);align-items:flex-start}
+    .award-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px)}
+    .award-icon{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--blue));display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+    .award-body h4{margin-bottom:.4rem;font-size:1rem}
+    .award-body p{font-size:.87rem;margin:0}
+    .award-year{font-size:.75rem;color:var(--gold);font-weight:700;letter-spacing:.08em;margin-top:.4rem;display:block}
+
+    .timeline{max-width:800px;margin:3rem auto 0;position:relative}
+    .timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--blue),var(--gold));transform:translateX(-50%)}
+    .tl-item{display:flex;justify-content:flex-end;padding-right:calc(50% + 2.5rem);margin-bottom:2.5rem;position:relative}
+    .tl-item:nth-child(even){justify-content:flex-start;padding-right:0;padding-left:calc(50% + 2.5rem)}
+    .tl-dot{position:absolute;left:50%;top:.8rem;width:16px;height:16px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--gold));transform:translateX(-50%);border:3px solid #fff;box-shadow:0 0 0 3px var(--blue-light)}
+    .tl-card{background:#fff;border-radius:var(--radius);padding:1.5rem;border:1px solid #e2e8f0;box-shadow:var(--shadow-sm);max-width:320px;width:100%}
+    .tl-year{color:var(--blue-light);font-weight:700;font-size:.82rem;letter-spacing:.08em;margin-bottom:.4rem}
+    .tl-card h4{margin-bottom:.4rem;font-size:1rem}
+    .tl-card p{font-size:.87rem;margin:0}
+    @media(max-width:600px){
+      .timeline::before{left:1rem}
+      .tl-item,.tl-item:nth-child(even){justify-content:flex-end;padding:0 0 0 3.5rem}
+      .tl-dot{left:1rem}
+    }
+
+    .landmark-cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;margin-top:3rem}
+    .case-card{background:var(--navy);border-radius:var(--radius-lg);padding:2rem;color:#fff;transition:var(--transition);position:relative;overflow:hidden}
+    .case-card::after{content:'⚖️';position:absolute;right:-10px;bottom:-20px;font-size:6rem;opacity:.08}
+    .case-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(13,27,64,.4)}
+    .case-badge{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:var(--gold);font-size:.75rem;font-weight:700;padding:.3rem .8rem;border-radius:50px;margin-bottom:1rem;letter-spacing:.05em}
+    .case-card h4{color:#fff;margin-bottom:.7rem;font-size:1.05rem}
+    .case-card p{color:rgba(255,255,255,.7);font-size:.87rem;margin:0}
+    .case-result{margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.15);font-size:.82rem;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:.5rem}
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+      <div><span class="logo-text">LexCounsel</span><span class="logo-sub">Advocates & Solicitors</span></div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="practice.html">Practice</a>
+      <a href="testimonials.html">Testimonials</a><a href="team.html">Team</a>
+      <a href="achievements.html" class="active">Achievements</a><a href="contact.html">Contact</a>
+      <a href="about.html">About</a><a href="contact.html" class="nav-cta">Free Consultation</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label"><i class="fas fa-trophy"></i>&nbsp; Our Record</span>
+    <h1>Our Achievements</h1>
+    <p>20 years of landmark victories, prestigious awards and milestones</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Achievements</span></div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section-pad bg-navy">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:3rem">
+      <span class="section-label" style="color:var(--gold)"><i class="fas fa-chart-bar"></i>&nbsp; By the Numbers</span>
+      <h2 class="section-title" style="color:#fff">Our Impact in <span style="color:var(--gold)">Numbers</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card reveal"><div class="achievement-icon">⚖️</div><h2 data-target="3500" data-suffix="+">0+</h2><p>Cases Won</p></div>
+      <div class="achievement-card reveal"><div class="achievement-icon">🏛️</div><h2 data-target="450" data-suffix="+">0+</h2><p>High Court Victories</p></div>
+      <div class="achievement-card reveal"><div class="achievement-icon">📜</div><h2 data-target="85" data-suffix="+">0+</h2><p>Supreme Court Matters</p></div>
+      <div class="achievement-card reveal"><div class="achievement-icon">🏆</div><h2 data-target="32" data-suffix="+">0+</h2><p>Awards Received</p></div>
+      <div class="achievement-card reveal"><div class="achievement-icon">👥</div><h2 data-target="5000" data-suffix="+">0+</h2><p>Clients Served</p></div>
+      <div class="achievement-card reveal"><div class="achievement-icon">🌟</div><h2 data-target="20" data-suffix="+">0+</h2><p>Years of Excellence</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Awards -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label"><i class="fas fa-award"></i>&nbsp; Recognition</span>
+      <h2 class="section-title">Awards & <span class="text-blue">Recognitions</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card reveal"><div class="award-icon">🏆</div><div class="award-body"><h4>Best Litigation Firm – Delhi</h4><p>Awarded by Legal 500 India for exceptional civil and criminal litigation outcomes.</p><span class="award-year">2023</span></div></div>
+      <div class="award-card reveal"><div class="award-icon">⭐</div><div class="award-body"><h4>Top 50 Law Firms in India</h4><p>Featured in India Business Law Journal's annual ranking of top law firms.</p><span class="award-year">2022 & 2023</span></div></div>
+      <div class="award-card reveal"><div class="award-icon">🎖️</div><div class="award-body"><h4>Excellence in Constitutional Law</h4><p>Bar Council of Delhi award for landmark constitutional law contributions.</p><span class="award-year">2021</span></div></div>
+      <div class="award-card reveal"><div class="award-icon">📋</div><div class="award-body"><h4>Outstanding PILs Award</h4><p>Recognised by the Supreme Court Legal Services Committee for impactful PIL work.</p><span class="award-year">2020</span></div></div>
+      <div class="award-card reveal"><div class="award-icon">🌟</div><div class="award-body"><h4>Best Women Advocate Award</h4><p>Adv. Priya Sharma recognised by All India Bar Association for outstanding practice.</p><span class="award-year">2019</span></div></div>
+      <div class="award-card reveal"><div class="award-icon">💎</div><div class="award-body"><h4>Corporate Law Firm of the Year</h4><p>Asian Legal Business Award for corporate legal services and M&A excellence.</p><span class="award-year">2018</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Landmark Cases -->
+<section class="section-pad bg-off">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label"><i class="fas fa-gavel"></i>&nbsp; Case Victories</span>
+      <h2 class="section-title">Landmark <span class="text-blue">Case Victories</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="landmark-cases">
+      <div class="case-card reveal"><span class="case-badge">Supreme Court</span><h4>Fundamental Right to Privacy in Digital Space</h4><p>Successfully argued a landmark PIL challenging unconstitutional mass surveillance. Court upheld digital privacy as a fundamental right under Article 21.</p><div class="case-result"><i class="fas fa-check-circle"></i> Landmark Judgment – 2022</div></div>
+      <div class="case-card reveal"><span class="case-badge">High Court</span><h4>Heritage Property Restoration</h4><p>Won a complex multi-party property dispute spanning 800 crore rupees, restoring rightful title to a heritage property after a 7-year legal battle.</p><div class="case-result"><i class="fas fa-check-circle"></i> Full Title Restored – 2023</div></div>
+      <div class="case-card reveal"><span class="case-badge">Sessions Court</span><h4>Wrongful Prosecution – Complete Acquittal</h4><p>Secured acquittal of a falsely accused client in a high-profile criminal case covered by national media. Evidence irregularities exposed through meticulous investigation.</p><div class="case-result"><i class="fas fa-check-circle"></i> Full Acquittal – 2023</div></div>
+      <div class="case-card reveal"><span class="case-badge">NCLT</span><h4>Hostile Takeover Prevention</h4><p>Blocked a ₹200 crore hostile acquisition through urgent injunctions and shareholder protection orders, saving a family-owned business from predatory investors.</p><div class="case-result"><i class="fas fa-check-circle"></i> Client Business Saved – 2022</div></div>
+      <div class="case-card reveal"><span class="case-badge">RERA Authority</span><h4>Mass Builder Fraud – 142 Home Buyers</h4><p>Filed and won a class action RERA complaint on behalf of 142 homebuyers against a fraudulent builder. Secured ₹12 crore in refunds and penalties.</p><div class="case-result"><i class="fas fa-check-circle"></i> ₹12 Cr Recovered – 2021</div></div>
+      <div class="case-card reveal"><span class="case-badge">High Court</span><h4>Environmental PIL – Factory Pollution</h4><p>Filed landmark PIL that resulted in closure of 8 illegal polluting factories near a residential colony. Secured compensation and relocation for affected residents.</p><div class="case-result"><i class="fas fa-check-circle"></i> PIL Upheld – 2020</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label"><i class="fas fa-history"></i>&nbsp; Our Journey</span>
+      <h2 class="section-title">20 Years of <span class="text-blue">Excellence</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2004</div><h4>Founded in New Delhi</h4><p>LexCounsel established by Adv. Arjun Mehta with a vision of accessible, high-quality legal representation.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2008</div><h4>High Court Empanelment</h4><p>Recognised as a panel counsel for Delhi High Court. Corporate law division launched.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2012</div><h4>Expanded to 8 Advocates</h4><p>Family law and property law practices formalised. 1000th case milestone reached.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2016</div><h4>First Supreme Court Victory</h4><p>Landmark constitutional law judgment. Firm recognised nationally for PIL work.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2019</div><h4>Legal 500 Recognition</h4><p>Featured in Legal 500 India. Team expanded to 12 specialists across 6 practice areas.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2023</div><h4>Best Litigation Firm Award</h4><p>Multiple national awards. 3500+ cases handled. 98% client satisfaction rate achieved.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Let Us Add Your Success Story</h2>
+    <p>Join thousands of clients who trusted LexCounsel with their most important legal battles.</p>
+    <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:.8rem">
+          <div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+          <div><span class="logo-text">LexCounsel</span><span class="logo-sub" style="color:rgba(255,255,255,.4)">Advocates & Solicitors</span></div>
+        </div>
+        <p>Providing trusted legal representation across India since 2004.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="practice.html">Practice Areas</a></li>
+        <li><a href="team.html">Our Team</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="achievements.html">Achievements</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Practice Areas</h4><ul>
+        <li><a href="practice.html#civil">Civil Litigation</a></li><li><a href="practice.html#criminal">Criminal Defence</a></li>
+        <li><a href="practice.html#corporate">Corporate Law</a></li><li><a href="practice.html#family">Family Law</a></li>
+        <li><a href="practice.html#constitutional">Constitutional Law</a></li><li><a href="practice.html#property">Property Law</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>42, Law Chambers, Court Road, New Delhi – 110001</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 12345 67890</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@lexcounsel.in</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 LexCounsel Advocates & Solicitors. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

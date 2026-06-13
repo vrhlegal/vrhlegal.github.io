@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Practice Areas – LexCounsel Advocates</title>
+  <meta name="description" content="Explore our comprehensive legal practice areas including civil litigation, criminal defence, corporate law, family law, constitutional law and property law."/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>"/>
+  <style>
+    .practice-detail{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:center;padding:70px 0;border-bottom:1px solid #e2e8f0}
+    .practice-detail:last-child{border-bottom:none}
+    .practice-detail.reverse{direction:rtl}
+    .practice-detail.reverse>*{direction:ltr}
+    .practice-visual{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg)}
+    .practice-visual-inner{
+      height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:1rem;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;
+    }
+    .practice-visual-inner .big-icon{font-size:5rem}
+    .practice-visual-inner p{font-size:.9rem;opacity:.7;letter-spacing:.05em;text-transform:uppercase}
+    .practice-detail-content .tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0}
+    .tag{
+      padding:.35rem .9rem;border-radius:50px;font-size:.78rem;font-weight:600;
+      background:var(--blue-pale);color:var(--blue-light);
+    }
+    .practice-detail-content ul{margin:1rem 0 1.5rem;display:flex;flex-direction:column;gap:.6rem}
+    .practice-detail-content ul li{display:flex;align-items:center;gap:.6rem;font-size:.92rem;color:var(--gray-600)}
+    .practice-detail-content ul li i{color:var(--blue-light);font-size:.85rem}
+    @media(max-width:768px){
+      .practice-detail,.practice-detail.reverse{grid-template-columns:1fr;direction:ltr}
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+      <div><span class="logo-text">LexCounsel</span><span class="logo-sub">Advocates & Solicitors</span></div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="practice.html" class="active">Practice</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="team.html">Team</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Free Consultation</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label"><i class="fas fa-book-open"></i>&nbsp; What We Do</span>
+    <h1>Our Practice Areas</h1>
+    <p>Comprehensive legal expertise across all major domains of Indian law</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Practice Areas</span></div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+
+    <!-- Civil Litigation -->
+    <div class="practice-detail" id="civil">
+      <div class="practice-visual reveal-left">
+        <div class="practice-visual-inner"><div class="big-icon">⚖️</div><p>Civil Litigation</p></div>
+      </div>
+      <div class="practice-detail-content reveal-right">
+        <span class="section-label"><i class="fas fa-gavel"></i>&nbsp; Civil Law</span>
+        <h2>Civil Litigation</h2>
+        <div class="divider divider-left"></div>
+        <p>We represent individuals and organisations in complex civil disputes before all courts and tribunals. Our litigators combine meticulous preparation with aggressive courtroom advocacy.</p>
+        <div class="tags"><span class="tag">Property Disputes</span><span class="tag">Contractual Claims</span><span class="tag">Tort Law</span><span class="tag">Consumer Rights</span><span class="tag">Injunctions</span></div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Property and land title disputes</li>
+          <li><i class="fas fa-check-circle"></i> Breach of contract claims</li>
+          <li><i class="fas fa-check-circle"></i> Defamation and tort actions</li>
+          <li><i class="fas fa-check-circle"></i> Consumer forum representations</li>
+          <li><i class="fas fa-check-circle"></i> Injunction and stay applications</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Consult Now</a>
+      </div>
+    </div>
+
+    <!-- Criminal Defence -->
+    <div class="practice-detail reverse" id="criminal">
+      <div class="practice-visual reveal-right">
+        <div class="practice-visual-inner"><div class="big-icon">🏛️</div><p>Criminal Defence</p></div>
+      </div>
+      <div class="practice-detail-content reveal-left">
+        <span class="section-label"><i class="fas fa-shield-alt"></i>&nbsp; Criminal Law</span>
+        <h2>Criminal Defence</h2>
+        <div class="divider divider-left"></div>
+        <p>Every accused deserves the strongest possible defence. Our criminal law team brings strategic thinking and courtroom expertise to protect your rights and freedom.</p>
+        <div class="tags"><span class="tag">Bail Applications</span><span class="tag">Sessions Court</span><span class="tag">High Court</span><span class="tag">Supreme Court</span><span class="tag">Appeals</span></div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Bail and anticipatory bail applications</li>
+          <li><i class="fas fa-check-circle"></i> Trial defence in Sessions and HC</li>
+          <li><i class="fas fa-check-circle"></i> White-collar and economic offences</li>
+          <li><i class="fas fa-check-circle"></i> NDPS, POCSO & cyber crime cases</li>
+          <li><i class="fas fa-check-circle"></i> Criminal appeals and revisions</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Consult Now</a>
+      </div>
+    </div>
+
+    <!-- Corporate Law -->
+    <div class="practice-detail" id="corporate">
+      <div class="practice-visual reveal-left">
+        <div class="practice-visual-inner"><div class="big-icon">💼</div><p>Corporate Law</p></div>
+      </div>
+      <div class="practice-detail-content reveal-right">
+        <span class="section-label"><i class="fas fa-building"></i>&nbsp; Corporate Law</span>
+        <h2>Corporate Law</h2>
+        <div class="divider divider-left"></div>
+        <p>We serve startups, SMEs and large corporations with end-to-end corporate legal services — from incorporation to complex mergers, ensuring full regulatory compliance.</p>
+        <div class="tags"><span class="tag">Company Formation</span><span class="tag">M&A</span><span class="tag">Contracts</span><span class="tag">Compliance</span><span class="tag">IPR</span></div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Company incorporation and structuring</li>
+          <li><i class="fas fa-check-circle"></i> Mergers, acquisitions and joint ventures</li>
+          <li><i class="fas fa-check-circle"></i> Commercial contract drafting and review</li>
+          <li><i class="fas fa-check-circle"></i> SEBI, RBI and regulatory compliance</li>
+          <li><i class="fas fa-check-circle"></i> Intellectual property protection</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Consult Now</a>
+      </div>
+    </div>
+
+    <!-- Family Law -->
+    <div class="practice-detail reverse" id="family">
+      <div class="practice-visual reveal-right">
+        <div class="practice-visual-inner"><div class="big-icon">👪</div><p>Family Law</p></div>
+      </div>
+      <div class="practice-detail-content reveal-left">
+        <span class="section-label"><i class="fas fa-heart"></i>&nbsp; Family Law</span>
+        <h2>Family Law</h2>
+        <div class="divider divider-left"></div>
+        <p>We handle sensitive family matters with empathy and professionalism, always prioritising the best interests of children and fair outcomes for all parties involved.</p>
+        <div class="tags"><span class="tag">Divorce</span><span class="tag">Child Custody</span><span class="tag">Maintenance</span><span class="tag">Adoption</span><span class="tag">DV Act</span></div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Contested and mutual consent divorce</li>
+          <li><i class="fas fa-check-circle"></i> Child custody and visitation rights</li>
+          <li><i class="fas fa-check-circle"></i> Maintenance and alimony claims</li>
+          <li><i class="fas fa-check-circle"></i> Domestic violence protection orders</li>
+          <li><i class="fas fa-check-circle"></i> Adoption and guardianship matters</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Consult Now</a>
+      </div>
+    </div>
+
+    <!-- Constitutional Law -->
+    <div class="practice-detail" id="constitutional">
+      <div class="practice-visual reveal-left">
+        <div class="practice-visual-inner"><div class="big-icon">📜</div><p>Constitutional Law</p></div>
+      </div>
+      <div class="practice-detail-content reveal-right">
+        <span class="section-label"><i class="fas fa-landmark"></i>&nbsp; Constitutional Law</span>
+        <h2>Constitutional Law</h2>
+        <div class="divider divider-left"></div>
+        <p>We champion fundamental rights and constitutional freedoms. Our team has filed landmark PILs and argued path-breaking constitutional matters before the Supreme Court.</p>
+        <div class="tags"><span class="tag">Writ Petitions</span><span class="tag">PIL</span><span class="tag">Fundamental Rights</span><span class="tag">Supreme Court</span></div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Habeas corpus and fundamental rights writs</li>
+          <li><i class="fas fa-check-circle"></i> Public Interest Litigation (PIL) filing</li>
+          <li><i class="fas fa-check-circle"></i> Challenges to unconstitutional laws</li>
+          <li><i class="fas fa-check-circle"></i> Service and administrative law</li>
+          <li><i class="fas fa-check-circle"></i> Election law disputes</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Consult Now</a>
+      </div>
+    </div>
+
+    <!-- Property Law -->
+    <div class="practice-detail reverse" id="property">
+      <div class="practice-visual reveal-right">
+        <div class="practice-visual-inner"><div class="big-icon">🏠</div><p>Property Law</p></div>
+      </div>
+      <div class="practice-detail-content reveal-left">
+        <span class="section-label"><i class="fas fa-home"></i>&nbsp; Property Law</span>
+        <h2>Property Law</h2>
+        <div class="divider divider-left"></div>
+        <p>From title verification to complex multi-party disputes, our property law team protects your real estate investments and resolves disputes efficiently.</p>
+        <div class="tags"><span class="tag">Title Verification</span><span class="tag">Registration</span><span class="tag">Landlord-Tenant</span><span class="tag">RERA</span></div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Property title search and verification</li>
+          <li><i class="fas fa-check-circle"></i> Sale deed and agreement drafting</li>
+          <li><i class="fas fa-check-circle"></i> Landlord-tenant eviction and rent disputes</li>
+          <li><i class="fas fa-check-circle"></i> RERA complaints and builder disputes</li>
+          <li><i class="fas fa-check-circle"></i> Inheritance and succession matters</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Consult Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Not Sure Which Area Applies to You?</h2>
+    <p>Book a free consultation and our experts will guide you to the right legal path.</p>
+    <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Get Free Advice</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:.8rem">
+          <div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+          <div><span class="logo-text">LexCounsel</span><span class="logo-sub" style="color:rgba(255,255,255,.4)">Advocates & Solicitors</span></div>
+        </div>
+        <p>Providing trusted legal representation across India since 2004.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="practice.html">Practice Areas</a></li>
+        <li><a href="team.html">Our Team</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="achievements.html">Achievements</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Practice Areas</h4><ul>
+        <li><a href="#civil">Civil Litigation</a></li><li><a href="#criminal">Criminal Defence</a></li>
+        <li><a href="#corporate">Corporate Law</a></li><li><a href="#family">Family Law</a></li>
+        <li><a href="#constitutional">Constitutional Law</a></li><li><a href="#property">Property Law</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>42, Law Chambers, Court Road, New Delhi – 110001</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 12345 67890</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@lexcounsel.in</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 LexCounsel Advocates & Solicitors. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

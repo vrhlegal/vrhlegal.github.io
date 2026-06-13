@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Our Team – LexCounsel Advocates</title>
+  <meta name="description" content="Meet the expert legal team at LexCounsel Advocates. Senior advocates, corporate lawyers, and family law specialists with decades of combined experience."/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>"/>
+  <style>
+    .team-full{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:2.5rem;margin-top:3rem}
+    .member-card{background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid #e2e8f0;transition:var(--transition)}
+    .member-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+    .member-img{height:280px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--navy),var(--blue))}
+    .member-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .member-card:hover .member-img img{transform:scale(1.05)}
+    .member-placeholder{height:100%;display:flex;align-items:center;justify-content:center;font-size:6rem}
+    .member-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,27,64,.92) 0%,transparent 55%);opacity:0;transition:var(--transition);display:flex;align-items:flex-end;padding:1.5rem}
+    .member-card:hover .member-overlay{opacity:1}
+    .member-links{display:flex;gap:.7rem}
+    .member-links a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.85rem;border:1px solid rgba(255,255,255,.25);transition:var(--transition)}
+    .member-links a:hover{background:var(--gold)}
+    .member-body{padding:1.5rem 1.8rem}
+    .member-body h3{margin-bottom:.2rem;font-size:1.15rem}
+    .member-role{color:var(--blue-light);font-size:.82rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:.8rem}
+    .member-exp{display:inline-flex;align-items:center;gap:.4rem;background:var(--blue-pale);color:var(--blue-light);font-size:.78rem;font-weight:600;padding:.3rem .8rem;border-radius:50px;margin-bottom:.8rem}
+    .member-body p{font-size:.87rem;color:var(--gray-600);line-height:1.7;margin-bottom:1rem}
+    .member-skills{display:flex;flex-wrap:wrap;gap:.4rem}
+    .skill-tag{padding:.25rem .7rem;background:var(--gray-100);color:var(--gray-600);font-size:.73rem;border-radius:50px;font-weight:500}
+    .leadership-badge{background:linear-gradient(135deg,var(--gold),#e6c060);color:var(--navy);padding:.3rem .8rem;border-radius:50px;font-size:.72rem;font-weight:700;position:absolute;top:1rem;right:1rem;letter-spacing:.05em}
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+      <div><span class="logo-text">LexCounsel</span><span class="logo-sub">Advocates & Solicitors</span></div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="practice.html">Practice</a>
+      <a href="testimonials.html">Testimonials</a><a href="team.html" class="active">Team</a>
+      <a href="achievements.html">Achievements</a><a href="contact.html">Contact</a>
+      <a href="about.html">About</a><a href="contact.html" class="nav-cta">Free Consultation</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label"><i class="fas fa-users"></i>&nbsp; Our Experts</span>
+    <h1>Meet Our Legal Team</h1>
+    <p>Dedicated advocates with specialised expertise and decades of courtroom experience</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Our Team</span></div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label"><i class="fas fa-user-tie"></i>&nbsp; Leadership</span>
+      <h2 class="section-title">Expert <span class="text-blue">Legal Professionals</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub">Our diverse team of 12 advocates brings specialised expertise across every practice area, united by a commitment to client success.</p>
+    </div>
+
+    <div class="team-full">
+
+      <div class="member-card reveal">
+        <div class="member-img" style="position:relative">
+          <img src="images/team_lawyer1.png" alt="Arjun Mehta – Senior Advocate" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="member-placeholder" style="display:none">👨‍⚖️</div>
+          <span class="leadership-badge">Founding Partner</span>
+          <div class="member-overlay"><div class="member-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="#" aria-label="Profile"><i class="fas fa-user"></i></a>
+          </div></div>
+        </div>
+        <div class="member-body">
+          <h3>Adv. Arjun Mehta</h3>
+          <div class="member-role">Senior Advocate & Founding Partner</div>
+          <div class="member-exp"><i class="fas fa-briefcase"></i> 24 Years Experience</div>
+          <p>Former Additional Solicitor General with landmark Supreme Court victories. Specialises in constitutional matters and high-profile criminal defence.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Constitutional Law</span>
+            <span class="skill-tag">Criminal Defence</span>
+            <span class="skill-tag">Supreme Court</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="member-card reveal">
+        <div class="member-img" style="position:relative">
+          <img src="images/team_lawyer2.png" alt="Priya Sharma – Managing Partner" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="member-placeholder" style="display:none">👩‍⚖️</div>
+          <span class="leadership-badge">Managing Partner</span>
+          <div class="member-overlay"><div class="member-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="#" aria-label="Profile"><i class="fas fa-user"></i></a>
+          </div></div>
+        </div>
+        <div class="member-body">
+          <h3>Adv. Priya Sharma</h3>
+          <div class="member-role">Managing Partner – Corporate & Family Law</div>
+          <div class="member-exp"><i class="fas fa-briefcase"></i> 18 Years Experience</div>
+          <p>LLM from National Law School. Expert in corporate M&A and family law. Has structured over 200 corporate transactions and handled 500+ family matters.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Corporate Law</span>
+            <span class="skill-tag">Family Law</span>
+            <span class="skill-tag">M&A</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="member-card reveal">
+        <div class="member-img" style="position:relative">
+          <img src="images/team_lawyer3.png" alt="Ravi Nair – Civil Litigation" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="member-placeholder" style="display:none">👨‍💼</div>
+          <div class="member-overlay"><div class="member-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="#" aria-label="Profile"><i class="fas fa-user"></i></a>
+          </div></div>
+        </div>
+        <div class="member-body">
+          <h3>Adv. Ravi Nair</h3>
+          <div class="member-role">Senior Associate – Civil Litigation</div>
+          <div class="member-exp"><i class="fas fa-briefcase"></i> 15 Years Experience</div>
+          <p>Specialises in complex civil disputes, property law and consumer litigation. Known for meticulous trial preparation and persuasive court arguments.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Civil Litigation</span>
+            <span class="skill-tag">Property Law</span>
+            <span class="skill-tag">Consumer Rights</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="member-card reveal">
+        <div class="member-img">
+          <div class="member-placeholder">👩‍💼</div>
+          <div class="member-overlay"><div class="member-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div></div>
+        </div>
+        <div class="member-body">
+          <h3>Adv. Kavita Singh</h3>
+          <div class="member-role">Associate – Family & Labour Law</div>
+          <div class="member-exp"><i class="fas fa-briefcase"></i> 10 Years Experience</div>
+          <p>Empathetic and tenacious in family law matters. Also handles labour dispute resolution, industrial tribunals and employment rights cases.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Family Law</span>
+            <span class="skill-tag">Labour Law</span>
+            <span class="skill-tag">DV Act</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="member-card reveal">
+        <div class="member-img">
+          <div class="member-placeholder">👨‍⚖️</div>
+          <div class="member-overlay"><div class="member-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div></div>
+        </div>
+        <div class="member-body">
+          <h3>Adv. Sanjay Verma</h3>
+          <div class="member-role">Associate – Criminal Law</div>
+          <div class="member-exp"><i class="fas fa-briefcase"></i> 12 Years Experience</div>
+          <p>Former Public Prosecutor turned defence lawyer. Expert in bail applications, NDPS cases, white-collar crimes and criminal appeals.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Criminal Law</span>
+            <span class="skill-tag">NDPS Cases</span>
+            <span class="skill-tag">Bail Applications</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="member-card reveal">
+        <div class="member-img">
+          <div class="member-placeholder">👩‍⚖️</div>
+          <div class="member-overlay"><div class="member-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div></div>
+        </div>
+        <div class="member-body">
+          <h3>Adv. Ananya Iyer</h3>
+          <div class="member-role">Associate – IPR & Technology Law</div>
+          <div class="member-exp"><i class="fas fa-briefcase"></i> 8 Years Experience</div>
+          <p>Specialises in intellectual property rights, technology contracts, data privacy law and cyber crime cases for startups and corporations.</p>
+          <div class="member-skills">
+            <span class="skill-tag">IPR</span>
+            <span class="skill-tag">Tech Law</span>
+            <span class="skill-tag">Cyber Crime</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-off">
+  <div class="container text-center">
+    <span class="section-label"><i class="fas fa-graduation-cap"></i>&nbsp; Our Credentials</span>
+    <h2 class="section-title">Recognised by the <span class="text-blue">Best Institutions</span></h2>
+    <div class="divider"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:2rem">
+      <div class="feature-card reveal" style="text-align:center">
+        <div class="feature-icon" style="margin:0 auto 1rem"><i class="fas fa-university"></i></div>
+        <h4>Bar Council of India</h4>
+        <p>All advocates registered and in good standing with BCI</p>
+      </div>
+      <div class="feature-card reveal" style="text-align:center">
+        <div class="feature-icon" style="margin:0 auto 1rem"><i class="fas fa-trophy"></i></div>
+        <h4>Top Law Firm 2023</h4>
+        <p>Recognised by Legal 500 India as a leading litigation firm</p>
+      </div>
+      <div class="feature-card reveal" style="text-align:center">
+        <div class="feature-icon" style="margin:0 auto 1rem"><i class="fas fa-medal"></i></div>
+        <h4>Supreme Court Panel</h4>
+        <p>Empanelled as counsel for multiple Central Government bodies</p>
+      </div>
+      <div class="feature-card reveal" style="text-align:center">
+        <div class="feature-icon" style="margin:0 auto 1rem"><i class="fas fa-award"></i></div>
+        <h4>National Law School Alumni</h4>
+        <p>Partners are distinguished alumni of premier national law schools</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Work With Our Expert Team</h2>
+    <p>Schedule a consultation and we'll match you with the right advocate for your case.</p>
+    <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:.8rem">
+          <div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+          <div><span class="logo-text">LexCounsel</span><span class="logo-sub" style="color:rgba(255,255,255,.4)">Advocates & Solicitors</span></div>
+        </div>
+        <p>Providing trusted legal representation across India since 2004.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="practice.html">Practice Areas</a></li>
+        <li><a href="team.html">Our Team</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="achievements.html">Achievements</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Practice Areas</h4><ul>
+        <li><a href="practice.html#civil">Civil Litigation</a></li><li><a href="practice.html#criminal">Criminal Defence</a></li>
+        <li><a href="practice.html#corporate">Corporate Law</a></li><li><a href="practice.html#family">Family Law</a></li>
+        <li><a href="practice.html#constitutional">Constitutional Law</a></li><li><a href="practice.html#property">Property Law</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>42, Law Chambers, Court Road, New Delhi – 110001</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 12345 67890</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@lexcounsel.in</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 LexCounsel Advocates & Solicitors. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>
