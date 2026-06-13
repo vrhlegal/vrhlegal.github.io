@@ -1,9 +1,9 @@
-# LexCounsel Advocates Website
+# VRH Legal Website
 
-A professional static website for LexCounsel Advocates & Solicitors, built with HTML, CSS and JavaScript.
+A professional static website for VRH Legal Advocates & Solicitors, built with HTML, CSS and JavaScript.
 
 ## 🌐 Live Site
-**[View Live Website](https://yourusername.github.io/lexcounsel/)**
+**[View Live Website](https://yourusername.github.io/vrhlegal/)**
 
 ## 📁 Pages
 | Page | File | Description |
@@ -42,9 +42,9 @@ A professional static website for LexCounsel Advocates & Solicitors, built with 
 ```bash
 git init
 git add .
-git commit -m "Initial commit: LexCounsel Advocate Website"
+git commit -m "Initial commit: VRH Legal Website"
 git branch -M main
-git remote add origin https://github.com/yourusername/lexcounsel.git
+git remote add origin https://github.com/yourusername/vrhlegal.git
 git push -u origin main
 ```
 
@@ -58,12 +58,12 @@ git push -u origin main
 
 ## 📞 Customisation
 Update the following in all HTML files to personalise:
-- Firm name: `LexCounsel`
+- Firm name: `VRH Legal`
 - Phone: `+91 12345 67890`
-- Email: `info@lexcounsel.in`
+- Email: `info@vrhlegal.in`
 - Address: `42, Law Chambers, Court Road, New Delhi – 110001`
 - Team names and photos in `team.html`
 - Google Maps coordinates in `contact.html`
 
 ## 📄 License
-© 2024 LexCounsel Advocates & Solicitors. All Rights Reserved.
+© 2024 VRH Legal Advocates & Solicitors. All Rights Reserved.
